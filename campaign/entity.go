@@ -1,5 +1,7 @@
 package campaign
 
+import "bwastartup/user"
+
 type Campaign struct {
 	ID               int
 	UserID           int
@@ -12,6 +14,7 @@ type Campaign struct {
 	CurrentAmount    int
 	Slug             string
 	CampaignImages   []CampaignImage
+	User             user.User
 }
 
 type CampaignImage struct {
