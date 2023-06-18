@@ -1,6 +1,7 @@
 package transaction
 
 import (
+	"bwastartup/campaign"
 	"bwastartup/user"
 	"time"
 )
@@ -14,4 +15,5 @@ type Transactions struct {
 	Code       string
 	User       user.User
 	CreatedAt  time.Time
+	Campaign   campaign.Campaign
 }
